@@ -32,11 +32,11 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 > A token is a string of cryptic text issued by a server to be stored in a client for authentication purposes. Once issued, the token can be read by the server that issued it to identify the user and grant permissions.
 
-- [ ] What steps can you take in your web apps to keep your data secure?
+- [x] What steps can you take in your web apps to keep your data secure?
 
 > To keep our data secure, we can use an authentication system and protect certain routes in our app from being accessed by unauthenticated users. Users who don't have the requisite token will be routed to an unprotected page, like a login page. Additionally, we can send an authentication header with our API calls.
 
-- [ ] Describe how web servers work.
+- [x] Describe how web servers work.
 
 > Web servers can mean one of two things:
 >
@@ -45,7 +45,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 >
 > The physical web server is connected to the internet and stores code for different websites to be shared globally at all times. The software web server "serves" web pages retrieved from code to users upon request. To access a website, computers connect to the internet via the world wide web, located a specific server computer through a URL and domain name, and retrieve requested information and resources from said server.
 
-- [ ] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers?
+- [x] Which HTTP methods can be mapped to the CRUD acronym that we use when interfacing with APIs/Servers?
 
 > When interfacing with APIs/Servers, the following HTTP methods can be mapped to the CRUD acronym:
 >
@@ -69,7 +69,7 @@ Follow these steps to set up and work on your project:
 - [x] **RUN** `yarn start or npm start` to get your API up and running on `http://localhost:5000`. This is the **URL** you're going to need to use within your React app in order to make AJAX requests for data.
 - [x] **LOOK** at your `client` directory and notice it's just a plain ol' React App that we've built using `create-react-app`.
 - [x] **cd** into `client` and run `yarn install or npm install` to retrieve the client side dependencies.
-- [ ] **RUN** `yarn start or npm start` to fire up your React application.
+- [x] **RUN** `yarn start or npm start` to fire up your React application.
 
 Follow these steps for completing your project:
 
@@ -85,10 +85,10 @@ The MVP of this project will be broken up between 2 stages. Follow each step.
 
 Build a login form to authenticate your users.
 
-- [ ] Construct an AXIOS request to retrieve a token from the server. You'll use this token to interact with the API
-- [ ] Save the token to localStorage
-- [ ] Build a `axiosWithAuth` module to create an instance of axios with the authentication header
-- [ ] Build a `PrivateRoute` component and use it to protect a route that renders the `BubblesPage` component
+- [x] Construct an AXIOS request to retrieve a token from the server. You'll use this token to interact with the API
+- [x] Save the token to localStorage
+- [x] Build a `axiosWithAuth` module to create an instance of axios with the authentication header
+- [x] Build a `PrivateRoute` component and use it to protect a route that renders the `BubblesPage` component
 
 ### Stage 2 - Consuming the API
 
