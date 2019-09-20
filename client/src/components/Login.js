@@ -28,7 +28,7 @@ const Login = props => {
 
   return (
     <>
-      <h1>Welcome to the Bubble App!</h1>
+      <h1>Welcome to the Bubbles App!</h1>
       {/* <p>Build a login page here</p> */}
       <div className='login-wrap'>
         <form onSubmit={login}>
