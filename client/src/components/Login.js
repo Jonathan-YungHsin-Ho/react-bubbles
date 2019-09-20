@@ -35,7 +35,7 @@ const Login = props => {
           type='text'
           name='username'
           placeholder='...username'
-          autoComplete='off'
+          // autoComplete='off'
           value={credentials.username}
           onChange={handleChange}
         />
@@ -43,7 +43,7 @@ const Login = props => {
           type='password'
           name='password'
           placeholder='...password'
-          autoComplete='off'
+          // autoComplete='off'
           value={credentials.password}
           onChange={handleChange}
         />
