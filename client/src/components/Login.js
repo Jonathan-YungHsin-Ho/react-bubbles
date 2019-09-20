@@ -27,29 +27,37 @@ const Login = props => {
   if (localStorage.getItem('token')) return <Redirect to='/bubblepage' />;
 
   return (
-    <div>
+    <>
       <h1>Welcome to the Bubble App!</h1>
       {/* <p>Build a login page here</p> */}
-      <form onSubmit={login}>
-        <input
-          type='text'
-          name='username'
-          placeholder='...username'
-          // autoComplete='off'
-          value={credentials.username}
-          onChange={handleChange}
-        />
-        <input
-          type='password'
-          name='password'
-          placeholder='...password'
-          // autoComplete='off'
-          value={credentials.password}
-          onChange={handleChange}
-        />
-        <button>Log in</button>
-      </form>
-    </div>
+      <div className='login-wrap'>
+        <form onSubmit={login}>
+          <label>
+            username:
+            <input
+              type='text'
+              name='username'
+              placeholder='...username'
+              // autoComplete='off'
+              value={credentials.username}
+              onChange={handleChange}
+            />
+          </label>
+          <label>
+            password:
+            <input
+              type='password'
+              name='password'
+              placeholder='...password'
+              // autoComplete='off'
+              value={credentials.password}
+              onChange={handleChange}
+            />
+          </label>
+          <button className='btn-login'>Log in</button>
+        </form>
+      </div>
+    </>
   );
 };
 
