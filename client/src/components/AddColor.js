@@ -6,7 +6,7 @@ const initialColor = {
   code: { hex: '' },
 };
 
-export default function AddColor({ colors, updateColors }) {
+export default function AddColor({ updateColors }) {
   const [colorToAdd, setColorToAdd] = useState(initialColor);
 
   const addColor = e => {
@@ -16,6 +16,7 @@ export default function AddColor({ colors, updateColors }) {
       .then(res => {
         // console.log(res.data);
         updateColors(res.data);
+        setColorToAdd(initialColor);
       })
       .catch(err => console.log(err));
   };
@@ -45,7 +46,7 @@ export default function AddColor({ colors, updateColors }) {
             value={colorToAdd.code.hex}
           />
         </label>
-        <button>add</button>
+        <button className='btn-add'>add</button>
       </form>
     </div>
   );
